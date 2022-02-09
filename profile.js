@@ -1,15 +1,15 @@
 export const skills = [
   { skill: "Javascript", percentage: 100 },
-  { skill: "C#", percentage: 60 },
   { skill: "Firebase", percentage: 70 },
   { skill: "Tailwind", percentage: 70 },
-  { skill: "Next", percentage: 80 },
-  { skill: "React", percentage: 90 },
+  { skill: "Next", percentage: 70 },
+  { skill: "Github", percentage: 80 },
+  { skill: "React", percentage: 80 },
   { skill: "Bootstrap", percentage: 50 },
   { skill: "RV", percentage: 70 },
   { skill: "Node.js", percentage: 60 },
   { skill: "MongoDB", percentage: 60 },
-  { skill: "SQL", percentage: 60 },
+  { skill: "MySQL", percentage: 60 },
   { skill: "Unity", percentage: 60 },
   { skill: "Redes", percentage: 70 },
 ];
@@ -18,7 +18,7 @@ export const experiences = [
   {
     title: "Freelancer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus veniam doloremque incidunt sed architecto porro accusamus corrupti, reprehenderit voluptatibus repudiandae cumque atque! Sequi suscipit, molestiae quis aut dicta nihil?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus veniam doloremque incidunt sed architecto porro accusamus corrupti, reprehenderit voluptatibus repudiandae cumque atque! Sequi suscipit, molestiae quis aut dicta nihil? ",
     from: 2019,
     to: 2021,
   },
@@ -31,6 +31,13 @@ export const projects = [
       "Aplicación para agendar tareas, realizada con JS, Boostrap, con enfoque de OPP",
     image: "todo.png",
     link: "https://to-do-task-js.netlify.app/",
+  },
+  {
+    title: "Product Hunt",
+    description:
+      "Sitio web para publicar ideas de proyectos, realizado con Next y Firebase, ",
+    image: "productHunt.png",
+    link: "https://product-hunt-8oj9pfo8j-xjo-joex.vercel.app/",
   },
   {
     title: "Recipes Drinks",
@@ -51,6 +58,24 @@ export const projects = [
       "Aplicación web que cotiza el pago de un seguro, reaclizada con create-react-app ",
     image: "cotizador.png",
     link: "https://react-quote.netlify.app/",
+  },
+  {
+    title: "Platzi Food",
+    description: "Sitio web de comida rapida, realizada con Tailwind",
+    image: "food.png",
+    link: "https://food-with-tailwind.netlify.app/",
+  },
+  {
+    title: "App Clima ",
+    description: "App de clima, usando con react ",
+    image: "clima.png",
+    link: "https://wea-ther-react-app.netlify.app/",
+  },
+  {
+    title: "SquidGame",
+    description: "Minijuego realizado con la libreria Three.js",
+    image: "squidGame.png",
+    link: "https://squidgame-app.netlify.app/",
   },
 ];
 
