@@ -20,9 +20,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link href="https://www.linkedin.com/in/joe-vega-296b37185/">
+              <a href="https://www.linkedin.com/in/joe-vega-296b37185/" target={_blank}>
                 <a className="nav-link">Blog</a>
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <Link href="/github">
