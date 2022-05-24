@@ -77,6 +77,13 @@ export const projects = [
     image: "squidGame.png",
     link: "https://squidgame-app.netlify.app/",
   },
+  {
+    title: "RealTime drawing",
+    description: "Aplicacion de dibujo en tiempo real multiplayer, realizada con express y socket.io",
+    image: "drawing.png",
+    link: "https://real-time-drawing-node.herokuapp.com/",
+  },
+
 ];
 
 export const posts = [
