@@ -1,39 +1,50 @@
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid container">
-        <Link href="/">
-          <a className="navbar-brand">Simple Portafolio</a>
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a href="https://www.linkedin.com/in/joe-vega-296b37185/" target="_blank">
-                <a className="nav-link">Blog</a>
-              </a>
-            </li>
-            <li className="nav-item">
-              <Link href="/github">
-                <a className="nav-link">Github</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
+	const { pathname } = useRouter();
+
+	const [background, setBackground] = useState("");
+	const [scroll, setScroll] = useState("");
+	const handleScroll = () => {
+		setScroll(window.scrollY);
+	};
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	});
+	return (
+		<header className={scroll > 1 ? "sticky" : pathname==="/github"? "change-position":''}>
+			<Link href="/" className="logo">
+				<img src="/logo.png" />
+			</Link>
+			{/* <div className="bx bx-menu" id="menu-icon"></div> */}
+			<ul className="navlist">
+				<li>
+					<a href="#home">Home</a>
+				</li>
+				<li>
+					<a href="#home">About</a>
+				</li>
+
+				<li>
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#home">Contact</a>
+				</li>
+			</ul>
+			<Link href="/github">
+				<a className="nav-link">Github</a>
+			</Link>
+			<a href="/Profile.pdf" target={"_blank"} className="top-btn">
+				Download CV
+			</a>
+		</header>
+	);
 };
 
 export default Navbar;

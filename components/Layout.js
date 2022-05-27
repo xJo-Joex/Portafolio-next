@@ -21,8 +21,8 @@ const Layout = ({ children, footer = true, dark, title }) => {
   }, []);
   return (
     <div className={classnames({ "bg-dark": dark, "bg-light": !dark })}>
-      <Navbar />
-      <main className="container py-4">
+      <Navbar/>
+      <main className="">
         {title && (
           <h1 className={classnames("text-center", { "text-light": dark })}>
             {title}
@@ -32,7 +32,7 @@ const Layout = ({ children, footer = true, dark, title }) => {
       </main>
       {footer && (
         <footer className="bg-dark text-light text-center">
-          <div className="container p-4">
+          <div className="container p-4 mt-4">
             <h1>&copy; Joe Vega Portafolio</h1>
             <p>2021-{new Date().getFullYear()}</p>
             <p>All rights Rerverd</p>

@@ -4,10 +4,10 @@ import Error from "./_error";
 const Github = ({ user, statusCode }) => {
   if (statusCode) return <Error statusCode={statusCode} />;
   return (
-    <Layout footer={false} dark={true}>
-      <div className="row">
+    <Layout footer={false} dark={false}>
+      <div className="row github">
         <div className="col-md-4 offset-md-4">
-          <div className="card card-body text-center">
+          <div className="card  github card-body text-center">
             <h1>{user.name}</h1>
             <img src={user.avatar_url} alt="" />
             <p>{user.bio}</p>
