@@ -26,6 +26,30 @@ export const experiences = [
 
 export const projects = [
 	{
+		title: "Conferences",
+		description: "Sitio web de conferencias, realizado con HTML, CSS y JS",
+		image: "conferencias.jpg",
+		link: "https://conferencias-02.netlify.app/",
+	},
+	{
+		title: "Real estate",
+		description: "Sitio realizado con Next, @chakra-ui y axios",
+		image: "realestate.png",
+		link: "jsm-realstate-eghqenv1g-xjo-joex.vercel.app",
+	},
+	{
+		title: "Coffee",
+		description: "Blog de Café con consejos y Cursos, realizado con HTML, CSS y JS",
+		image: "cafe.jpg",
+		link: "https://caffe-02.netlify.app/",
+	},
+	{
+		title: "Real Estate ",
+		description: "Sitio web realizado con HTML, CSS y JS ",
+		image: "bienes.jpg",
+		link: "https://bienes-raices02.netlify.app",
+	},
+	{
 		title: "WebSite TODO",
 		description: "Aplicación para agendar tareas, realizada con JS, Boostrap, con enfoque de OPP",
 		image: "todo.png",
@@ -52,7 +76,7 @@ export const projects = [
 	},
 	{
 		title: "Cotizador de seguros",
-		description: "Aplicación web que cotiza el pago de un seguro, reaclizada con create-react-app ",
+		description: "Aplicación web que cotiza el pago de un seguro, realizada con create-react-app ",
 		image: "cotizador.png",
 		link: "https://react-quote.netlify.app/",
 	},
