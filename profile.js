@@ -35,7 +35,7 @@ export const projects = [
 		title: "Real estate",
 		description: "Sitio realizado con Next, @chakra-ui y axios",
 		image: "realestate.png",
-		link: "jsm-realstate-eghqenv1g-xjo-joex.vercel.app",
+		link: "https://jsm-realstate-eghqenv1g-xjo-joex.vercel.app/",
 	},
 	{
 		title: "Coffee",
