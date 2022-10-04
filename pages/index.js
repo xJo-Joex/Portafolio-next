@@ -90,7 +90,7 @@ const Index = () => (
 					<div className="card-body">
 						<h1 id="about">Experiencia</h1>
 						<ul>
-							{experiences.map(({ title, description, from, to }, index) => (
+						{experiences.map(({ title, description, from, to }, index) => (
 								<li key={index}>
 									<h3>{title}</h3>
 									<h5>

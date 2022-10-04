@@ -37,9 +37,9 @@ const Navbar = () => {
 					<a href="#home">Contact</a>
 				</li>
 			</ul>
-			<Link href="/github">
+			{/* <Link href="/github">
 				<a className="nav-link">Github</a>
-			</Link>
+			</Link> */}
 			<a href="/Profile.pdf" target={"_blank"} className="top-btn">
 				Download CV
 			</a>
